@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #8c38ff;
+    --light: #eeee;
+    --dark: #212121;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    height: 100vh;
+    
+}
+
+/* #hero {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 200px;
+}
+
+
+#hero video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+}
+
+#hero .overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(137, 137, 137);
+    z-index: 100;
+    mix-blend-mode: overlay;
+}
+
+#hero .caption {
+    position: relative;
+    z-index: 20;
+}
+
+#hero .caption img {
+    width: 55%;
+    margin-bottom: 50px;
+}
+
+#hero .caption h1 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+#hero .caption h2 {
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+
+#hero .caption h2:hover {
+    background-color: blue;
+}
+
+#hero .caption p {
+    font-size: 1.1em;
+    margin: 0px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+
+
+#main {
+    height: 100vh;
+} */

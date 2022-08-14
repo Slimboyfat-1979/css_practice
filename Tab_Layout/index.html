@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn-1" onclick="openHTML()"><i class="fa-brands fa-html5"></i>HTML</button>
+            <button id="btn-2" onclick="openCSS()"><i class="fa-brands fa-css3"></i>CSS</button>
+            <button id="btn-3" onclick="openJS()"><i class="fa-brands fa-codepen"></i>Javascript</button>
+        </div>
+        <div class="content" id="content-1">
+            <div class="content-left">
+                <h1>Learn Drums</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis totam dolores, dicta necessitatibus obcaecati et blanditiis optio culpa velit accusantium sapiente. Adipisci assumenda repellat illo, pariatur tempora amet, ut deleniti iste reprehenderit eius placeat excepturi optio a nesciunt consequatur animi natus ducimus at eaque ad iusto aperiam, ullam numquam facilis.</p>
+                <a href="">Watch Video</a>
+            </div>
+            <div class="content-right">
+                <img src="../images/image-01.jpg" alt="">
+            </div>
+        </div>
+        <div class="content" id="content-2">
+            <div class="content-left">
+                <h1>Learn Guitar</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis totam dolores, dicta necessitatibus obcaecati et blanditiis optio culpa velit accusantium sapiente. Adipisci assumenda repellat illo, pariatur tempora amet, ut deleniti iste reprehenderit eius placeat excepturi optio a nesciunt consequatur animi natus ducimus at eaque ad iusto aperiam, ullam numquam facilis.</p>
+                <a href="">Watch Video</a>
+            </div>
+            <div class="content-right">
+                <img src="../images/image-02.jpg" alt="">
+            </div>
+        </div>
+        <div class="content" id="content-3">
+            <div class="content-left">
+                <h1>Learn Piano</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis totam dolores, dicta necessitatibus obcaecati et blanditiis optio culpa velit accusantium sapiente. Adipisci assumenda repellat illo, pariatur tempora amet, ut deleniti iste reprehenderit eius placeat excepturi optio a nesciunt consequatur animi natus ducimus at eaque ad iusto aperiam, ullam numquam facilis.</p>
+                <a href="">Watch Video</a>
+            </div>
+            <div class="content-right">
+                <img src="../images/image-03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let content1 = document.getElementById('content-1');
+        let content2 = document.getElementById('content-2');
+        let content3 = document.getElementById('content-3');
+
+        let btn1 = document.getElementById('btn-1');
+        let btn2 = document.getElementById('btn-2');
+        let btn3 = document.getElementById('btn-3');
+
+        function openHTML() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+
+        function openCSS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#ff7846";
+            btn3.style.color = "000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+        }
+
+        function openJS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#ff7846";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+        }
+
+    </script>
+</body>
+</html>

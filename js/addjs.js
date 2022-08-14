@@ -1,0 +1,1 @@
+var item = document.getElementsByTagName("h1").classList()
