@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="message">Hi Baby</h1>
+    <h4 class="words">Just wanted to say I love you</h4>
+    <div class="heart"></div>
+    <button id="button" onclick="move()">Click Me</button>
+
+    <!-- <h1 class="words">Hello</h1>
+    <button onclick="go()">Click This</button> -->
+
+    <!-- <script>
+        const message2 = document.querySelector('.words');
+
+        function go(){
+            message2.classList.add('animate');
+        }
+
+    </script> -->
+
+    <script>
+
+        const message = document.getElementById("message");
+        const message2 = document.querySelector('.words');
+
+        function move(){
+           message.style.transform = "translateX(0)";
+           message2.classList.add('animate');
+        }
+    </script>
+</body>
+</html>

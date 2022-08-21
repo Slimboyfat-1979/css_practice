@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+#slider {
+    height: 500px;
+    width: 500px;
+    /* border: 12px solid red; */
+    margin: 50px auto;
+    overflow: hidden;
+   
+}
+
+/* #slider .slider-container:active {
+    transform: translateX(-33%);
+} */
+
+#slider .slider-container {
+    width: 300%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    position: relative;
+    animation: slider 10s linear  infinite;
+    animation-fill-mode: forwards;
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear; */
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    66% {
+        left: -200%;
+    }
+}
+
+#slider img {
+    object-fit: cover;
+    width: 33%;
+    height: 100%;
+}
+
+
+
+/* #slider figure img {
+   width: 500px;
+   height: 500px;
+   object-fit: cover;
+} */
+
+
+/* #slider figure img {
+    float: left;
+    width: 33%;
+} */
+
+/* @keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+
+    45%{
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70%{
+        left: -200%;
+    }
+
+    75%{
+        left: -300%;
+    }
+
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+} */
+
+/* h1 {
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+/* Slider Animation */
+
+/* @keyframes slide_animation {
+    0% {left: 0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+
+.slider-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.slider-images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+} */

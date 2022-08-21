@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b1522;
+}
+
+.heart {
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.7s linear infinite;
+    
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
+.words {
+    transition: all 1s linear;
+}
+
+
+
+h1 {
+    color: White;
+    position: absolute;
+    bottom: 250px;
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: translateX(-1500px);
+    transition: 2.3s;
+}
+
+.words {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    max-width: 120px;
+    position: absolute;
+    bottom: 130px;
+    transition: all 1s linear;
+    transition-delay: 3s;
+}
+
+.words.animate {
+    transform: translateY(-110px);
+}
+
+
+button {
+    font-family: fantasy;
+    position: absolute;
+    padding: 20px 100px;
+    bottom: 150px;
+    color: white;
+    border: 2px solid rgb(25, 25, 172);
+    background-color: #0b1522;
+    box-shadow: 10px 10px 100px darkblue, -10px -10px 100px darkblue;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    z-index: 2;
+}
+
